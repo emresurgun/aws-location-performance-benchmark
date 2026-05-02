@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1278313-52a1-48ba-b111-8e42045be33b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/benchmark-target/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benchmark-agent/src/main/java/io/github/emresurgun/benchmark/agent/BenchmarkAgentApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benchmark-agent/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmark-target/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/benchmark-target/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1777718414617</updated>
-      <workItem from="1777718415629" duration="7661000" />
+      <workItem from="1777718415629" duration="9034000" />
     </task>
     <servers />
   </component>
