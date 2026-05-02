@@ -4,3 +4,11 @@ server:
 spring:
   application:
     name: benchmark-agent
+
+agent:
+  source-region: turkey
+  central-api-url: http://localhost:8080
+  targets:
+    - region: frankfurt-local-test
+      host: localhost
+      port: 8081
