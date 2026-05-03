@@ -12,3 +12,6 @@ agent:
     - region: frankfurt-local-test
       host: localhost
       port: 8081
+    - region: istanbul-local-test
+      host: localhost
+      port: 8081
