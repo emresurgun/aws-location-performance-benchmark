@@ -7,7 +7,7 @@ spring:
 
 agent:
   source-region: turkey
-  central-api-url: http://localhost:8080
+  central-api-url: http://localhost:8082
   targets:
     - region: frankfurt-local-test
       host: localhost
