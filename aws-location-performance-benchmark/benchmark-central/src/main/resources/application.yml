@@ -4,3 +4,9 @@ server:
 spring:
   application:
     name: benchmark-central
+
+influx:
+  url: http://localhost:8086
+  token: ${INFLUX_TOKEN:my-token}
+  org: ${INFLUX_ORG:benchmark-org}
+  bucket: ${INFLUX_BUCKET:benchmark-metrics}
