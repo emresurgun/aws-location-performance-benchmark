@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1278313-52a1-48ba-b111-8e42045be33b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/benchmark-central/src/main/java/io/github/emresurgun/benchmark/central/model/MetricSummary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmark-central/src/main/java/io/github/emresurgun/benchmark/central/config/InfluxDbConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/benchmark-central/src/main/java/io/github/emresurgun/benchmark/central/config/InfluxDbConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmark-central/src/main/java/io/github/emresurgun/benchmark/central/controller/MeasurementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/benchmark-central/src/main/java/io/github/emresurgun/benchmark/central/controller/MeasurementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmark-central/src/main/java/io/github/emresurgun/benchmark/central/controller/MetricsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/benchmark-central/src/main/java/io/github/emresurgun/benchmark/central/controller/MetricsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmark-central/src/main/java/io/github/emresurgun/benchmark/central/service/ComparisonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/benchmark-central/src/main/java/io/github/emresurgun/benchmark/central/service/ComparisonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmark-central/src/main/java/io/github/emresurgun/benchmark/central/service/InfluxQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/benchmark-central/src/main/java/io/github/emresurgun/benchmark/central/service/InfluxQueryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmark-central/src/main/java/io/github/emresurgun/benchmark/central/service/PercentileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/benchmark-central/src/main/java/io/github/emresurgun/benchmark/central/service/PercentileService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +58,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -71,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1777718414617</updated>
-      <workItem from="1777718415629" duration="33832000" />
+      <workItem from="1777718415629" duration="35644000" />
     </task>
     <servers />
   </component>
