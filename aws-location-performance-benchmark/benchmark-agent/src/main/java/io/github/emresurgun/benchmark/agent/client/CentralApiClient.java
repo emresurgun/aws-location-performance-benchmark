@@ -30,11 +30,23 @@ public class CentralApiClient {
                 result.isSuccess()
 
         );
-        restClient.post()
-                .uri(agentProperties.getCentralApiUrl()+ "/api/measurements")
-                .body(result)
-                .retrieve()
-                .toBodilessEntity();
+        try {
+
+
+            restClient.post()
+                    .uri(agentProperties.getCentralApiUrl() + "/api/measurements")
+                    .body(result)
+                    .retrieve()
+                    .toBodilessEntity();
+        }
+        catch (Exception e)
+        {
+            log.warn("Failed to send measurement to central: target={}, metric={}",
+
+                    result.getTargetRegion(),
+
+                    result.getMetricType());
+        }
     }
 
 }
