@@ -84,5 +84,63 @@ public class ThroughputScheduler {
         }
     }
 
+    @Scheduled(fixedDelay = 30000)
+    public void measureUploadThroughput()
+    {
+        byte[] uploadData = new byte[1024 * 1024];
+
+
+        for(TargetConfig target: agentProperties.getTargets())
+        {
+            try {
+
+
+                String url = "http://" + target.getHost() + ":" + target.getPort() + "/upload";
+
+                log.info("Measuring Upload Throughput for target={} url={}",
+                        target.getRegion(),
+                        url);
+
+                long start = System.nanoTime();
+
+                restClient.post().uri(url).body(uploadData).retrieve().toBodilessEntity();
+
+                long elapsedNanos = System.nanoTime() - start;
+                double valueMs = elapsedNanos / 1_000_000.0;
+
+                log.info("Upload throughput target={} valueMs={} bytes={}",
+                        target.getRegion(),
+                        valueMs,
+                        uploadData.length);
+
+                MeasurementResult result = new MeasurementResult();
+                result.setSourceRegion(agentProperties.getSourceRegion());
+                result.setTargetRegion(target.getRegion());
+                result.setMetricType(MetricType.THROUGHPUT_UP);
+                result.setValueMs(valueMs);
+                result.setSuccess(true);
+                result.setTimestamp(Instant.now());
+                result.setExtraTag("sizeKb=1024");
+                centralApiClient.send(result);
+            }catch (Exception e)
+            {
+                log.warn("Upload Throughput failed for target={} host={} port={}",
+                        target.getRegion(),
+                        target.getHost(),
+                        target.getPort());
+                MeasurementResult result = new MeasurementResult();
+                result.setSourceRegion(agentProperties.getSourceRegion());
+                result.setTargetRegion(target.getRegion());
+                result.setMetricType(MetricType.THROUGHPUT_UP);
+                result.setValueMs(-1);
+                result.setSuccess(false);
+                result.setTimestamp(Instant.now());
+                result.setExtraTag("sizeKb=1024");
+                centralApiClient.send(result);
+
+            }
+
+        }
+    }
 
 }
