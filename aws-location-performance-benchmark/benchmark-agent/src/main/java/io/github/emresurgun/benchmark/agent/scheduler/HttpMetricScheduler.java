@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClient;
+import java.net.InetAddress;
 
 import java.time.Instant;
 
@@ -81,6 +82,60 @@ public class HttpMetricScheduler {
                 centralApiClient.send(result);
             }
 
+        }
+    }
+
+    @Scheduled(fixedDelay = 30000)
+    public void measureDnsResolution()
+    {
+        for (TargetConfig target : agentProperties.getTargets())
+        {
+            try {
+                log.info("Measuring DNS resolution for target={} host={}",
+                        target.getRegion(),
+                        target.getHost());
+
+                long start = System.nanoTime();
+
+                InetAddress address = InetAddress.getByName(target.getHost());
+
+                long elapsedNanos = System.nanoTime() - start;
+                double valueMs = elapsedNanos / 1_000_000.0;
+
+                log.info("DNS resolution target={} host={} resolvedIp={} valueMs={}",
+                        target.getRegion(),
+                        target.getHost(),
+                        address.getHostAddress(),
+                        valueMs);
+
+                MeasurementResult result = new MeasurementResult();
+                result.setSourceRegion(agentProperties.getSourceRegion());
+                result.setTargetRegion(target.getRegion());
+                result.setMetricType(MetricType.DNS_RESOLUTION);
+                result.setValueMs(valueMs);
+                result.setSuccess(true);
+                result.setTimestamp(Instant.now());
+                result.setExtraTag("resolvedIp=" + address.getHostAddress());
+
+                centralApiClient.send(result);
+            }
+            catch (Exception e)
+            {
+                log.warn("DNS resolution failed for target={} host={}",
+                        target.getRegion(),
+                        target.getHost());
+
+                MeasurementResult result = new MeasurementResult();
+                result.setSourceRegion(agentProperties.getSourceRegion());
+                result.setTargetRegion(target.getRegion());
+                result.setMetricType(MetricType.DNS_RESOLUTION);
+                result.setValueMs(-1);
+                result.setSuccess(false);
+                result.setTimestamp(Instant.now());
+                result.setExtraTag(null);
+
+                centralApiClient.send(result);
+            }
         }
     }
 
