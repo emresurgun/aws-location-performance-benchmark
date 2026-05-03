@@ -18,8 +18,8 @@ import java.net.Socket;
 
 @Component
 public class TcpLatencyScheduler {
-    private final AgentProperties agentProperties;
 
+    private final AgentProperties agentProperties;
     private final CentralApiClient centralApiClient;
 
     public TcpLatencyScheduler(AgentProperties agentProperties, CentralApiClient centralApiClient)
