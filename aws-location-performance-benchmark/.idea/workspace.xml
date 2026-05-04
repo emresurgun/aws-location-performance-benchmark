@@ -5,14 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1278313-52a1-48ba-b111-8e42045be33b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/benchmark-frontend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benchmark-frontend/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benchmark-frontend/eslint.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benchmark-frontend/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benchmark-frontend/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benchmark-frontend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benchmark-frontend/public/favicon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benchmark-frontend/public/icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benchmark-frontend/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benchmark-frontend/src/App.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benchmark-frontend/src/api/metricsApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benchmark-frontend/src/assets/hero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benchmark-frontend/src/assets/react.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benchmark-frontend/src/assets/vite.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benchmark-frontend/src/components/ComparisonTable.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benchmark-frontend/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benchmark-frontend/src/main.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/benchmark-frontend/vite.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmark-central/src/main/java/io/github/emresurgun/benchmark/central/config/RedisConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmark-central/src/main/java/io/github/emresurgun/benchmark/central/config/WebSocketConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmark-central/src/main/java/io/github/emresurgun/benchmark/central/controller/ExportController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmark-central/src/main/java/io/github/emresurgun/benchmark/central/model/ComparisonSnapshot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmark-central/src/main/java/io/github/emresurgun/benchmark/central/model/PercentileResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmark-central/src/main/java/io/github/emresurgun/benchmark/central/service/LiveMetricService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmark-central/src/main/java/io/github/emresurgun/benchmark/central/websocket/ComparisonBroadcaster.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmark-central/src/main/java/io/github/emresurgun/benchmark/central/controller/MetricsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/benchmark-central/src/main/java/io/github/emresurgun/benchmark/central/controller/MetricsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmark-central/src/main/java/io/github/emresurgun/benchmark/central/service/InfluxQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/benchmark-central/src/main/java/io/github/emresurgun/benchmark/central/service/InfluxQueryService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +42,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
   "associatedIndex": 6
@@ -43,6 +59,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -81,11 +98,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1777718414617</updated>
-      <workItem from="1777718415629" duration="36275000" />
+      <workItem from="1777718415629" duration="42400000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

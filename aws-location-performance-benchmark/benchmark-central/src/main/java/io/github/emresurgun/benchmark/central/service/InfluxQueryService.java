@@ -54,7 +54,7 @@ public class InfluxQueryService {
 
                 from(bucket: "%s")
 
-                  |> range(start: -1h)
+                  |> range(start: -48h)
 
                   |> filter(fn: (r) => r["_measurement"] == "bench_metric")
 
@@ -94,7 +94,7 @@ public class InfluxQueryService {
 
                 from(bucket: "%s")
 
-                  |> range(start: -1h)
+                  |> range(start: -48h)
 
                   |> filter(fn: (r) => r["_measurement"] == "bench_metric")
 
