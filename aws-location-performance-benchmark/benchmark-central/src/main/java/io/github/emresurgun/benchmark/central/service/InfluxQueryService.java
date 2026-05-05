@@ -63,9 +63,6 @@ public class InfluxQueryService {
                   |> pivot(rowKey: ["_time", "source", "target", "metric"], columnKey: ["_field"], valueColumn: "_value")
 
                   |> sort(columns: ["_time"], desc: true)
-
-                  |> limit(n: 100)
-
                 """.formatted(bucket);
 
         List<FluxTable> tables = influxDBClient.getQueryApi().query(flux);
