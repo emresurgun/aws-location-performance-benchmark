@@ -42,11 +42,11 @@ function buildChartData(data, metricType) {
       };
     }
 
-    if (item.targetRegion === "frankfurt-local-test") {
+    if (item.targetRegion === "frankfurt") {
       buckets[bucketStartMs].frankfurtValues.push(item.valueMs);
     }
 
-    if (item.targetRegion === "istanbul-local-test") {
+    if (item.targetRegion === "istanbul") {
       buckets[bucketStartMs].istanbulValues.push(item.valueMs);
     }
   });
@@ -83,26 +83,26 @@ function MetricLineChart({ title, description, data }) {
             <XAxis dataKey="time" />
             <YAxis unit=" ms" />
             <Tooltip
-  contentStyle={{
-    backgroundColor: "#020617",
-    border: "1px solid #1e293b",
-    borderRadius: "12px",
-    color: "#e5e7eb",
-    boxShadow: "0 18px 40px rgba(0, 0, 0, 0.35)",
-  }}
-  labelStyle={{
-    color: "#cbd5e1",
-    fontWeight: 700,
-    marginBottom: "6px",
-  }}
-  itemStyle={{
-    fontWeight: 700,
-  }}
-  formatter={(value, name) => [
-    `${Number(value).toFixed(2)} ms`,
-    name,
-  ]}
-/>
+              contentStyle={{
+                backgroundColor: "#020617",
+                border: "1px solid #1e293b",
+                borderRadius: "12px",
+                color: "#e5e7eb",
+                boxShadow: "0 18px 40px rgba(0, 0, 0, 0.35)",
+              }}
+              labelStyle={{
+                color: "#cbd5e1",
+                fontWeight: 700,
+                marginBottom: "6px",
+              }}
+              itemStyle={{
+                fontWeight: 700,
+              }}
+              formatter={(value, name) => [
+                `${Number(value).toFixed(2)} ms`,
+                name,
+              ]}
+            />
             <Legend />
             <Line
               type="linear"
@@ -111,6 +111,7 @@ function MetricLineChart({ title, description, data }) {
               stroke="#60a5fa"
               strokeWidth={3}
               dot={false}
+              connectNulls={false}
             />
             <Line
               type="linear"
@@ -119,6 +120,7 @@ function MetricLineChart({ title, description, data }) {
               stroke="#22c55e"
               strokeWidth={3}
               dot={false}
+              connectNulls={false}
             />
           </LineChart>
         </ResponsiveContainer>
@@ -334,7 +336,7 @@ function ReliabilityPage() {
         <h1>Packet Loss and TLS</h1>
         <p className="page-description">
           48-hour reliability indicators, grouped into time-window averages.
-          Packet loss should stay near zero. TLS is expected to fail in local HTTP-only testing.
+          Packet loss should stay near zero. TLS is expected to fail in HTTP-only testing.
         </p>
       </div>
 
@@ -346,7 +348,7 @@ function ReliabilityPage() {
 
       <MetricLineChart
         title="TLS handshake duration over time"
-        description="TLS handshake duration trend. In local HTTP-only tests, this may stay at zero because TLS checks fail."
+        description="TLS handshake duration trend. In HTTP-only tests, this may stay at zero because TLS checks fail."
         data={tlsData}
       />
     </section>

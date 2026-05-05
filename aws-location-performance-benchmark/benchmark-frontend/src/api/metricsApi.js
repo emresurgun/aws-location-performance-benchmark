@@ -1,4 +1,4 @@
-const API_BASE_URL = "http://localhost:8082";
+const API_BASE_URL = "http://35.159.232.162:8082";
 
 async function request(path) {
   const response = await fetch(`${API_BASE_URL}${path}`);
@@ -11,7 +11,7 @@ async function request(path) {
 }
 
 export function fetchMetricComparisons() {
-  return request("/api/metrics/comparison?baseline=frankfurt-local-test&candidate=istanbul-local-test");
+  return request("/api/metrics/comparison?baseline=frankfurt&candidate=istanbul");
 }
 
 export function fetchMetricSummaries() {

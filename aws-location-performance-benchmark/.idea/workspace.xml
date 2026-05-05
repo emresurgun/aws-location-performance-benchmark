@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b1278313-52a1-48ba-b111-8e42045be33b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmark-central/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/benchmark-central/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmark-central/src/main/java/io/github/emresurgun/benchmark/central/service/InfluxQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/benchmark-central/src/main/java/io/github/emresurgun/benchmark/central/service/InfluxQueryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmark-agent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/benchmark-agent/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/benchmark-agent/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/benchmark-agent/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +64,13 @@
   }
 }</component>
   <component name="RunManager">
+    <configuration name="BenchmarkAgentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="benchmark-agent" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.emresurgun.benchmark.agent.BenchmarkAgentApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BenchmarkCentralApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="benchmark-central" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.emresurgun.benchmark.central.BenchmarkCentralApplication" />
@@ -88,7 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1777718414617</updated>
       <workItem from="1777718415629" duration="44533000" />
-      <workItem from="1778005550046" duration="1912000" />
+      <workItem from="1778005550046" duration="3244000" />
     </task>
     <servers />
   </component>

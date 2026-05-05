@@ -7,11 +7,11 @@ spring:
 
 agent:
   source-region: turkey
-  central-api-url: http://localhost:8082
+  central-api-url: http://35.159.232.162:8082
   targets:
-    - region: frankfurt-local-test
-      host: localhost
+    - region: frankfurt
+      host: 3.123.34.49
       port: 8081
-    - region: istanbul-local-test
-      host: localhost
+    - region: istanbul
+      host: 83.119.129.151
       port: 8081
