@@ -382,3 +382,15 @@ The result highlights that real-world cloud performance depends on more than phy
 ## License
 
 MIT
+
+## Graphs and Tables
+<img width="1281" height="509" alt="Screenshot 2026-05-08 at 01 13 40" src="https://github.com/user-attachments/assets/86044442-940f-4360-8a3c-c78ce9d14b1a" />
+<img width="1286" height="995" alt="Screenshot 2026-05-08 at 01 14 42" src="https://github.com/user-attachments/assets/c51647ec-a8a2-474d-8506-c1ef4d5f5143" />
+<img width="1281" height="993" alt="Screenshot 2026-05-08 at 01 15 17" src="https://github.com/user-attachments/assets/aa640b3b-393c-4b51-b4c3-b839eb06ed82" />
+<img width="1283" height="990" alt="Screenshot 2026-05-08 at 01 16 15" src="https://github.com/user-attachments/assets/79132d6c-7d3f-46aa-9d47-17fbbfb529ea" />
+<img width="1283" height="992" alt="Screenshot 2026-05-08 at 01 16 57" src="https://github.com/user-attachments/assets/0335d73c-5e66-4423-b712-b9c875401beb" />
+<img width="1281" height="993" alt="Screenshot 2026-05-08 at 01 17 23" src="https://github.com/user-attachments/assets/3beeae30-0918-4599-8722-83a2834ee725" />
+<img width="1283" height="993" alt="Screenshot 2026-05-08 at 01 17 47" src="https://github.com/user-attachments/assets/a68a6fce-c990-4b54-aed4-2f113dfec244" />
+<img width="1283" height="992" alt="Screenshot 2026-05-08 at 01 18 14" src="https://github.com/user-attachments/assets/9ada65af-8667-4a7a-b609-6e9a4714b634" />
+
+
