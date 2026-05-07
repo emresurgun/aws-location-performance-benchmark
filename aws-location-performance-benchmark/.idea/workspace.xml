@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b1278313-52a1-48ba-b111-8e42045be33b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmark-agent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/benchmark-agent/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/benchmark-agent/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/benchmark-agent/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +61,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.BenchmarkAgentApplication">
     <configuration name="BenchmarkAgentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="benchmark-agent" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.emresurgun.benchmark.agent.BenchmarkAgentApplication" />
@@ -96,6 +94,7 @@
       <updated>1777718414617</updated>
       <workItem from="1777718415629" duration="44533000" />
       <workItem from="1778005550046" duration="3244000" />
+      <workItem from="1778090547563" duration="1376000" />
     </task>
     <servers />
   </component>
